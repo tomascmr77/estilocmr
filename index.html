@@ -52,234 +52,141 @@
 
 </header>
 
-<!-- HERO -->
+<!-- =========================
+HERO
+========================= -->
 
 <section class="hero" id="inicio">
 
-<div class="hero-contenido">
+    <div class="hero-contenido">
 
-<img src="logo.png" class="hero-logo">
+        <img src="logo.png" class="hero-logo">
 
-<h1>ESTILO CMR</h1>
+        <h1>ESTILO CMR</h1>
 
-<h2>ROPA IMPORTADA</h2>
+        <h2>Ropa Importada Premium</h2>
 
-<p>
+        <p>
+            Camperones, camperas, chalecos, conjuntos y buzos de excelente calidad.
+            Venta minorista y mayorista con envíos a todo el país.
+        </p>
 
-La mejor calidad para vestir con estilo.
+        <a href="#productos">
+            <button>VER CATÁLOGO</button>
+        </a>
 
-Minorista y Mayorista.
-
-</p>
-
-<a href="#productos">
-
-<button>
-
-VER PRODUCTOS
-
-</button>
-
-</a>
-
-</div>
+    </div>
 
 </section>
 
-<!-- BENEFICIOS -->
+<!-- =========================
+BENEFICIOS
+========================= -->
 
 <section class="beneficios">
 
-<div>
+    <div>
+        🚚
+        <h3>Envíos</h3>
+        <p>A todo el país.</p>
+    </div>
 
-🚚
+    <div>
+        💳
+        <h3>Pagos Seguros</h3>
+        <p>Mercado Pago y Transferencia.</p>
+    </div>
 
-<h3>Envíos</h3>
+    <div>
+        ⭐
+        <h3>Calidad Premium</h3>
+        <p>Productos importados.</p>
+    </div>
 
-<p>A todo el país.</p>
-
-</div>
-
-<div>
-
-💳
-
-<h3>Pagos</h3>
-
-<p>Mercado Pago.</p>
-
-</div>
-
-<div>
-
-⭐
-
-<h3>Calidad</h3>
-
-<p>Productos Premium.</p>
-
-</div>
-
-<div>
-
-📱
-
-<h3>WhatsApp</h3>
-
-<p>Respuesta inmediata.</p>
-
-</div>
+    <div>
+        📱
+        <h3>Atención</h3>
+        <p>WhatsApp inmediato.</p>
+    </div>
 
 </section>
+
+<!-- =========================
+PRODUCTOS
+========================= -->
 
 <section id="productos">
 
 <div class="titulo">
 
-<h2>Nuestros Camperones</h2>
+<h2>Nuestro Catálogo</h2>
 
 <p>
-
-Elegí tu favorito.
-
+Elegí la categoría que quieras ver.
 </p>
+
+</div>
+
+<div class="categorias">
+
+<button class="categoria active" data-cat="todos">
+Todos
+</button>
+
+<button class="categoria" data-cat="camperones">
+Camperones
+</button>
+
+<button class="categoria" data-cat="camperas">
+Camperas
+</button>
+
+<button class="categoria" data-cat="chalecos">
+Chalecos
+</button>
+
+<button class="categoria" data-cat="conjuntos">
+Conjuntos
+</button>
+
+<button class="categoria" data-cat="buzos">
+Buzos
+</button>
 
 </div>
 
 <div class="buscador">
 
 <input
-
 id="buscar"
-
 type="text"
-
-placeholder="Buscar campera...">
+placeholder="Buscar producto...">
 
 </div>
 
 <div class="productos">
+
 <!-- =========================
 CAMPERÓN AFA
 ========================= -->
 
-<div class="card">
 
-<img src="camperaafa.jpeg" alt="Camperón AFA">
-
-<div class="card-info">
-
-<h3>Camperón AFA</h3>
-
-<p>
-
-Camperón importado premium.
-Ideal para invierno.
-
-</p>
-
-<div class="precio">
-
-$50.000
-
-</div>
-
-<label>Talle</label>
-
-<select>
-
-<option>S</option>
-
-<option>M</option>
-
-<option>L</option>
-
-<option>XL</option>
-
-</select>
-
-<button
-class="comprar"
-data-producto="Camperón AFA"
-data-precio="$50.000">
-
-Comprar por WhatsApp
-
-</button>
-
-</div>
-
-</div>
-
-<!-- =========================
-CAMPERÓN AFA BLANCO
-========================= -->
-
-<div class="card">
-
-<img src="camperaafablanco.jpeg" alt="Camperón AFA Blanco">
-
-<div class="card-info">
-
-<h3>Camperón AFA Blanco</h3>
-
-<p>
-
-Modelo impermeable.
-Excelente calidad.
-
-</p>
-
-<div class="precio">
-
-$55.000
-
-</div>
-
-<label>Talle</label>
-
-<select>
-
-<option>S</option>
-
-<option>M</option>
-
-<option>L</option>
-
-<option>XL</option>
-
-</select>
-
-<button
-class="comprar"
-data-producto="Camperón AFA Blanco"
-data-precio="$55.000">
-
-Comprar por WhatsApp
-
-</button>
-
-</div>
-
-</div>
 
 <!-- =========================
 CAMPERÓN BOCA
 ========================= -->
 
-<div class="card">
+<div class="card" data-cat="camperones">
 
-<img src="camperaboca.jpeg" alt="Camperón Boca">
+<img src="camperaboca.jpeg" alt="Campera Boca">
 
 <div class="card-info">
 
-<h3>Camperón Boca</h3>
+<h3>campera Boca</h3>
 
 <p>
-
 Camperón importado.
 Calidad premium.
-
 </p>
 
 <div class="precio">
@@ -319,18 +226,16 @@ Comprar por WhatsApp
 CAMPERÓN RIVER
 ========================= -->
 
-<div class="card">
+<div class="card" data-cat="camperones">
 
-<img src="camperariver.jpeg" alt="Camperón River">
+<img src="camperariver.jpeg" alt="Campera River">
 
 <div class="card-info">
 
-<h3>Camperón River</h3>
+<h3>Campera River</h3>
 
 <p>
-
-Camperón importado premium.
-
+Campera importado premium.
 </p>
 
 <div class="precio">
@@ -355,7 +260,7 @@ $50.000
 
 <button
 class="comprar"
-data-producto="Camperón River"
+data-producto="Campera River"
 data-precio="$50.000">
 
 Comprar por WhatsApp
@@ -365,9 +270,566 @@ Comprar por WhatsApp
 </div>
 
 </div>
+<div class="card" data-cat="camperas">
+
+<img src="camperasele.jpeg" alt="Camperón de la seleccion">
+
+<div class="card-info">
+
+<h3>Campera seleccion</h3>
+
+<p>
+Camperón importado premium.
+</p>
+
+<div class="precio">
+
+$45.000
+
 </div>
 
+<label>Talle</label>
+
+<select>
+
+<option>S</option>
+
+<option>M</option>
+
+<option>L</option>
+
+<option>XL</option>
+
+</select>
+
+<button
+class="comprar"
+data-producto="Campera seleccion"
+data-precio="$45.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<!-- =========================
+ACA DESPUÉS VAN LAS CAMPERAS
+========================= -->
+<!-- =========================
+CAMPERA MUJER
+========================= -->
+
+<div class="card" data-cat="camperas">
+
+<img src="camperamujer.jpeg" alt="Campera Mujer">
+
+<div class="card-info">
+
+<h3>Campera Mujer</h3>
+
+<p>
+Campera importada premium.
+Ideal para todos los días.
+</p>
+
+<div class="precio">
+$45.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="Campera Mujer"
+data-precio="$45.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<!-- =========================
+CAMPERA HOMBRE
+========================= -->
+
+<div class="card" data-cat="camperas">
+
+<img src="northface.jpeg" alt="Campera northface impermeable">
+
+<div class="card-info">
+
+<h3>Campera Hombre</h3>
+
+<p>
+Modelo importado.
+Excelente calidad.
+</p>
+
+<div class="precio">
+$65.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="Campera Mujer North Face"
+data-precio="$65.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<!-- =========================
+CHALECO NEGRO
+========================= -->
+
+
+<!-- =========================
+CHALECO BLANCO
+========================= -->
+
+
+
+<!-- =========================
+CONJUNTO NEGRO
+========================= -->
+
+<div class="card" data-cat="conjuntos">
+
+<img src="prematch.jpeg" alt="camiseta prematch">
+
+<div class="card-info">
+
+<h3>camiseta prematch</h3>
+
+<p>
+camiseta premium.
+</p>
+
+<div class="precio">
+$35.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="camiseta prematch"
+data-precio="$35.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<!-- =========================
+CONJUNTO BLANCO
+========================= -->
+
+<div class="card" data-cat="buzo">
+
+<img src="buzodeargentina.jpeg" alt="buzos de Argentina gris y negro">
+
+<div class="card-info">
+
+<h3>buzos de la seleccion</h3>
+
+<p>
+Conjunto importado.
+Máxima comodidad.
+</p>
+
+<div class="precio">
+$32.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="buzos de la seleccion"
+data-precio="$32.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+<div class="card" data-cat="conjuntos">
+
+<img src="conjuntoseleccion.jpeg" alt="Conjunto seleccion">
+
+<div class="card-info">
+
+<h3>Conjunto seleccion</h3>
+
+<p>
+Conjunto deportivo premium.
+</p>
+
+<div class="precio">
+$55.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="Conjunto seleccion"
+data-precio="$55.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<!-- =========================
+CONJUNTO BLANCO
+========================= -->
+<div class="card" data-cat="conjuntos">
+
+<img src="campera adidas roja.jpeg" alt="Campera adidas roja">
+
+<div class="card-info">
+
+<h3>Campera roja adidas/h3>
+
+<p>
+Campera adidas roja.
+</p>
+
+<div class="precio">
+$50.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="Campera adidas roja"
+data-precio="$50.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+<div class="card" data-cat="conjuntos">
+
+<img src="campera calvin.jpeg" alt="Campera calvin klein impermeable">
+
+<div class="card-info">
+
+<h3>campera calvin klain impermeable <h3>
+
+<p>
+Campera calkin klain impermeable.
+</p>
+
+<div class="precio">
+$65.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="Calvin klein roja impermeable"
+data-precio="$65.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+<!-- =========================
+CONJUNTO BLANCO
+========================= -->
+<div class="card" data-cat="conjuntos">
+
+<img src="nuevacamperacuello tejido.jpeg" alt="campera cuello tejido">
+
+<div class="card-info">
+
+<h3>campera cuello tejido</h3>
+
+<p>
+campera calidad premium.
+</p>
+
+<div class="precio">
+$40.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="campera cuello tejido seleccion"
+data-precio="$40.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<!-- =========================
+CONJUNTO BLANCO
+========================= -->
+
+<div class="card" data-cat="buzo">
+
+<img src="pantalon deportivo de la seleccion.jpeg" alt="pantalon de la seleccion">
+
+<div class="card-info">
+
+<h3>pantalon de la seleccion deportivo</h3>
+
+<p>
+Conjunto importado.
+Máxima comodidad.
+</p>
+
+<div class="precio">
+$35.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="buzos de la seleccion"
+data-precio="$35.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+<div class="card" data-cat="buzo">
+
+<img src="pantalon deportivo de boca.jpeg" alt="pantalon de boca deportivo">
+
+<div class="card-info">
+
+<h3>buzos de la seleccion</h3>
+
+<p>
+Conjunto importado.
+Máxima comodidad.
+</p>
+
+<div class="precio">
+$35.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="pantalon de Boca"
+data-precio="$35.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-cat="buzo">
+
+<img src="pantalon deportivo de river.jpeg" alt="pantalon de river deportivo">
+
+<div class="card-info">
+
+<h3>pantalon deportivo de River</h3>
+
+<p>
+Conjunto importado.
+Máxima comodidad.
+</p>
+
+<div class="precio">
+$35.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="pantalon deportivo de River"
+data-precio="$35.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<!-- =========================
+BUZO NEGRO
+========================= -->
+
+<div class="card" data-cat="buzos">
+
+<img src="buzo blanco.jpeg" alt="Buzo blanco">
+
+<div class="card-info">
+
+<h3>Buzo blanco</h3>
+
+<p>
+Buzo importado premium.
+</p>
+
+<div class="precio">
+$32.000
+</div>
+
+<label>Talle</label>
+
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<button
+class="comprar"
+data-producto="Buzo Negro"
+data-precio="$32.000">
+
+Comprar por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+BUZO BLANCO
+========================= -->
+
+<div class="card" data-cat="buzos">
+
+
+
 </section>
+
+<div class="card" data-cat="buzos">
+
 
 <!-- =========================
 NOSOTROS

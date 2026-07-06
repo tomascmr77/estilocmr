@@ -332,14 +332,20 @@ margin-top:40px;
 .card{
 
 background:white;
-
-border-radius:22px;
-
+border-radius:20px;
 overflow:hidden;
-
-box-shadow:0 12px 30px rgba(0,0,0,.08);
-
+display:flex;
+flex-direction:column;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 transition:.35s;
+height:100%;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
 
 }
 
@@ -354,14 +360,11 @@ box-shadow:0 20px 40px rgba(0,0,0,.12);
 .card img{
 
 width:100%;
-
-height:430px;
-
+aspect-ratio:4/5;
 object-fit:cover;
-
+display:block;
+transition:.4s;
 background:#f3f3f3;
-
-transition:.5s;
 
 }
 
@@ -373,37 +376,34 @@ transform:scale(1.05);
 
 .card-info{
 
-padding:25px;
+padding:22px;
+display:flex;
+flex-direction:column;
+flex:1;
 
 }
-
 .card-info h3{
 
-font-size:28px;
-
+font-size:24px;
 margin-bottom:12px;
+font-weight:700;
 
 }
-
 .card-info p{
 
 color:#666;
-
-line-height:28px;
-
-margin-bottom:20px;
+line-height:26px;
+margin-bottom:18px;
+min-height:55px;
 
 }
 
 .precio{
 
-font-size:34px;
-
+font-size:30px;
 font-weight:bold;
-
 color:#B58A68;
-
-margin-bottom:20px;
+margin-bottom:18px;
 
 }
 
@@ -445,25 +445,23 @@ border-color:#B58A68;
 
 .comprar{
 
+margin-top:auto;
 width:100%;
-
-padding:18px;
-
-background:#25D366;
-
-color:white;
-
+padding:16px;
 border:none;
-
 border-radius:12px;
-
-font-size:18px;
-
+background:#25D366;
+color:white;
+font-size:17px;
 font-weight:700;
-
 cursor:pointer;
-
 transition:.3s;
+
+}
+
+.comprar:hover{
+
+background:#1da851;
 
 }
 
@@ -980,5 +978,258 @@ z-index:999;
 #arriba:hover{
 
 transform:scale(1.1);
+
+}
+/*==========================
+CATEGORÍAS
+==========================*/
+
+.categorias{
+
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:45px;
+
+}
+
+.categoria-btn{
+
+padding:14px 26px;
+border:none;
+border-radius:30px;
+background:#ffffff;
+cursor:pointer;
+font-weight:600;
+font-size:16px;
+transition:.3s;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.categoria-btn:hover{
+
+background:#B58A68;
+color:white;
+
+}
+
+.categoria-btn.active{
+
+background:#B58A68;
+color:white;
+
+}
+@media (max-width:768px){
+
+header{
+
+padding:15px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero h2{
+
+font-size:20px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.productos{
+
+grid-template-columns:1fr;
+
+}
+
+.card img{
+
+height:300px;
+
+}
+
+.beneficios{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.categorias{
+
+overflow-x:auto;
+justify-content:flex-start;
+padding-bottom:10px;
+
+}
+
+.categoria-btn{
+
+flex:none;
+
+}
+
+}
+@media (max-width:500px){
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero-logo{
+
+width:100px;
+
+}
+
+.beneficios{
+
+grid-template-columns:1fr;
+
+}
+
+.card img{
+
+height:260px;
+
+}
+
+.titulo h2{
+
+font-size:28px;
+
+}
+
+}
+/*=========================
+CATEGORÍAS
+=========================*/
+
+.categorias{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+margin:35px 0;
+
+}
+
+.categoria{
+
+padding:14px 28px;
+border:none;
+border-radius:35px;
+background:white;
+cursor:pointer;
+font-size:16px;
+font-weight:600;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.categoria:hover{
+
+background:#B58A68;
+color:white;
+
+}
+
+.categoria.active{
+
+background:#B58A68;
+color:white;
+
+}
+@media(max-width:900px){
+
+.productos{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:650px){
+
+.productos{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.hero-logo{
+
+width:120px;
+
+}
+
+.card img{
+
+aspect-ratio:4/5;
+
+}
+
+.categorias{
+
+justify-content:flex-start;
+overflow-x:auto;
+padding-bottom:10px;
+
+}
+
+.categoria{
+
+flex:none;
+
+}
+
+}
+
+@media(max-width:450px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.card img{
+
+aspect-ratio:4/5;
+
+}
 
 }

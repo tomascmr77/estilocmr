@@ -10,7 +10,7 @@ if (buscador) {
 
         const texto = this.value.toLowerCase();
 
-        const productos = document.querySelectorAll(".producto");
+        const productos = document.querySelectorAll(".card");
 
         productos.forEach(producto => {
 
@@ -46,7 +46,7 @@ botones.forEach(boton => {
 
         const filtro = boton.dataset.filtro;
 
-        document.querySelectorAll(".producto").forEach(producto => {
+        document.querySelectorAll(".card").forEach(producto => {
 
             if (filtro == "todos") {
 
@@ -354,5 +354,43 @@ document.querySelectorAll(".card img").forEach(img=>{
         img.style.transform="scale(1)";
 
     });
+
+});
+const botonesCategorias=document.querySelectorAll(".categoria");
+const cards=document.querySelectorAll(".card");
+
+botonesCategorias.forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+document.querySelector(".categoria.active").classList.remove("active");
+
+btn.classList.add("active");
+
+const categoria=btn.dataset.categoria;
+
+cards.forEach(card=>{
+
+if(categoria==="todos"){
+
+card.style.display="block";
+
+}else{
+
+if(card.dataset.categoria===categoria){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+}
+
+});
+
+});
 
 });
